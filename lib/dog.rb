@@ -8,6 +8,9 @@ class Dog
     @mood = mood
   end
   
+  def be_happy
+    self.mood = "happy"
+  end
   
   
 end
