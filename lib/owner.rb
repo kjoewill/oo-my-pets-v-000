@@ -70,6 +70,14 @@ class Owner
     end
   end
   
+  
+  def list_pets
+    num_fishes = self.pets[:fishes].size
+    num_dogs = self.pets[:dogs].size
+    num_cats = self.pets[:cats].size
+    "I have #{num_fishes}, #{num_dogs} dog(s), and #{num_cats} cat(s)"
+  end
+  
   private 
   
   
