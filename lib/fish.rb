@@ -11,5 +11,9 @@ class Fish
   def be_happy
     self.mood = "happy"
   end
+    
+  def be_nervous
+    self.mood = "nervous"
+  end
   
 end
