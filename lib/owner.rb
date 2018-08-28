@@ -27,4 +27,11 @@ class Owner
     "I am a #{self.species}."
   end
   
+  #create fish with name and add to pets hash 
+  #maintain referantial integrity
+  def buy_fish(name)
+    fish = Fish.new(name)
+  end
+  
+  
 end
