@@ -35,7 +35,6 @@ class Owner
     self.pets[:fishes] << fish
   end
   
-  
   def buy_cat(name)
     cat = Cat.new(name)
     cat.owner = self
@@ -80,5 +79,6 @@ class Owner
   
   private 
   
+  def buy_pet(name, species, )
   
 end
