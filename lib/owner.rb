@@ -73,4 +73,8 @@ class Owner
     self.pets[key] << pet
   end
   
+  def num(type)
+    self.pets[type].size
+  end
+  
 end
