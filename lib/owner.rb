@@ -75,7 +75,7 @@ class Owner
     "I have #{num_fishes} fish, #{num_dogs} dog(s), and #{num_cats} cat(s)."
   end
   
-  #private 
+  private 
   
   def buy_pet(name, species, key)
     pet = species.new(name)
