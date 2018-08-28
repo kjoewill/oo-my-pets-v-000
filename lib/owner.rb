@@ -30,7 +30,7 @@ class Owner
   #create fish with name and add to pets hash 
   #maintain referantial integrity
   def buy_fish(name)
-    self.buy_pet(name, Fish, :fishes)
+    buy_pet(name, Fish, :fishes)
   end
   
   def buy_cat(name)
