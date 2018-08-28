@@ -30,9 +30,7 @@ class Owner
   #create fish with name and add to pets hash 
   #maintain referantial integrity
   def buy_fish(name)
-    fish = Fish.new(name)
-    fish.owner = self
-    self.pets[:fishes] << fish
+    self.buy_pet(name, Fish, :fishes)
   end
   
   def buy_cat(name)
