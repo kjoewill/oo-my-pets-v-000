@@ -41,7 +41,6 @@ class Owner
   
   def walk_dogs
     make_happy(:dogs)
-    #self.pets[:dogs].each { |e| e.be_happy }
   end
   
   def play_with_cats
