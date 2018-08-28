@@ -31,6 +31,8 @@ class Owner
   #maintain referantial integrity
   def buy_fish(name)
     fish = Fish.new(name)
+    fish.owner = self
+    self.pets
   end
   
   
