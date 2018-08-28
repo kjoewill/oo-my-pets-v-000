@@ -79,6 +79,10 @@ class Owner
   
   private 
   
-  def buy_pet(name, species, )
+  def buy_pet(name, species, key)
+    pet = species.new(name)
+    pet.owner = self
+    self.pets[key] << pet
+  end
   
 end
