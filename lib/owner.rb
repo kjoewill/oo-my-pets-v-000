@@ -62,7 +62,7 @@ class Owner
     fishes = self.pets[:fishes].size
     dogs = self.pets[:dogs].size
     cats = self.pets[:cats].size
-    "I have #{num(:fishes)} fish, #{dogs} dog(s), and #{cats} cat(s)."
+    "I have #{num(:fishes)} fish, #{num(:dogs)} dog(s), and #{num(:cats)} cat(s)."
   end
   
   private 
