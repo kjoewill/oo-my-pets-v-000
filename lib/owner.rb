@@ -27,8 +27,6 @@ class Owner
     "I am a #{self.species}."
   end
   
-  #create fish with name and add to pets hash 
-  #maintain referantial integrity
   def buy_fish(name)
     buy_pet(name, Fish, :fishes)
   end
@@ -57,8 +55,6 @@ class Owner
   def sell_pets
     self.pets.each do |type, pets| 
       pets.each { |e| e.mood = "nervous" }
-      #Should probably set each pet owner to nil or new owner to maintain RI!!
-      #Ignoring for now until through the test suite
       pets.clear
     end
   end
