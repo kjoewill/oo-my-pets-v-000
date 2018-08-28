@@ -59,9 +59,6 @@ class Owner
   end
   
   def list_pets
-    fishes = self.pets[:fishes].size
-    dogs = self.pets[:dogs].size
-    cats = self.pets[:cats].size
     "I have #{num(:fishes)} fish, #{num(:dogs)} dog(s), and #{num(:cats)} cat(s)."
   end
   
