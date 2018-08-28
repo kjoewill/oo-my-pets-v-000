@@ -8,4 +8,6 @@ class Dog
     @mood = mood
   end
   
+  
+  
 end
