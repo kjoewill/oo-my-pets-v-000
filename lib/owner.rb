@@ -40,7 +40,8 @@ class Owner
   end
   
   def walk_dogs
-    self.pets[:dogs].each { |e| e.be_happy }
+    make_happy(:dogs)
+    #self.pets[:dogs].each { |e| e.be_happy }
   end
   
   def play_with_cats
@@ -72,6 +73,10 @@ class Owner
   
   def num(type)
     self.pets[type].size
+  end
+  
+  def make_happy(type)
+    self.pets[type].each { |e| e.be_happy }
   end
   
 end
